@@ -1,0 +1,5 @@
+<main class="container">
+  <app-header *ngIf="currentRoute !== '/login' && currentRoute !== '/' "> </app-header>
+  <router-outlet></router-outlet>
+  <app-footer *ngIf="currentRoute !== '/login' && currentRoute !== '/' "></app-footer>
+</main>
